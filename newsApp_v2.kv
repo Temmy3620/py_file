@@ -1,0 +1,47 @@
+# -*- coding: utf-8 -*-
+<TestWidget>:
+    orientation: 'vertical'
+   
+    Accordion:
+        size_hint_y: 10
+        AccordionItem:
+            title:"IT"
+            GridLayout:
+                cols: 1
+                Button:
+                    text: "2"
+                Button:
+                    text: "3"
+            
+        AccordionItem:
+            title:"World"
+            Button:
+                text: "5"
+        AccordionItem:
+            title:"News"
+            ScrollView:
+                GridLayout:
+                    cols: 1
+                    
+                    Button:
+                        
+                        text: "5"
+                    Button:
+                        text: "3"
+                    Button:
+                        text: "6"
+    ActionBar:
+        ActionView:
+            ActionPrevious:
+                title:"your ActonBar"
+            ActionButton:
+                text: 'renew'
+                important: False
+            ActionButton:
+                text: 'shoutdwon'
+                important: True
+            ActionButton:
+                text: 'setting'
+                important: True
+<Button>:
+
